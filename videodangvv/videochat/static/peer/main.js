@@ -3,15 +3,8 @@
 
 function openStream(){
     const config = {
-        audio: false,
-        video: {
-            mandatory: {
-                chromeMediaSource: 'screen',
-                maxWidth: 1280,
-                maxHeight: 720
-            },
-            optional: []
-        }
+        audio: true,
+        video: true,
     };
     return navigator.mediaDevices.getUserMedia(config);
 }
